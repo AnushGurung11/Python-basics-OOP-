@@ -13,6 +13,11 @@ class Dog:
     def get_name(self): 
         return self.name
     
+    # creating setter function 
+    def set_name(self, name): 
+        self.name = name 
+        
+    
 
     # Here self represents that this methods is only for the instance of the object
     def bark(self): 
@@ -21,4 +26,6 @@ class Dog:
 # Creating an instance of class Dog 
 
 d = Dog("Numi")
+print(d.get_name())
+d.set_name("luci")
 print(d.get_name())
