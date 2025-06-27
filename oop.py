@@ -9,6 +9,10 @@ class Dog:
         """"Here the name is the paramenter which is to be passed during the creation of object of dog"""
         self.name = name 
         
+    # creating getter functions 
+    def get_name(self): 
+        return self.name
+    
 
     # Here self represents that this methods is only for the instance of the object
     def bark(self): 
@@ -17,5 +21,4 @@ class Dog:
 # Creating an instance of class Dog 
 
 d = Dog("Numi")
-d.bark()
-print(d.name)
+print(d.get_name())
