@@ -5,8 +5,10 @@
 class Dog: 
 
     # This is considered as the constructor 
-    def __init__(self):
-        pass
+    def __init__(self,name):
+        """"Here the name is the paramenter which is to be passed during the creation of object of dog"""
+        self.name = name 
+        
 
     # Here self represents that this methods is only for the instance of the object
     def bark(self): 
@@ -14,5 +16,6 @@ class Dog:
 
 # Creating an instance of class Dog 
 
-d = Dog()
+d = Dog("Numi")
 d.bark()
+print(d.name)
