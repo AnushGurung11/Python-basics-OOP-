@@ -15,6 +15,11 @@ class Animal:
         print("Speaking")
 
 class Human(Animal): 
+    # Using super() method for calling the constructor from parent class 
+    def __init__(self, name, age,race):
+        super().__init__(name, age)
+        self.race = race
+
     def Speak(self):
         print("I am talking")
 
@@ -27,9 +32,10 @@ a1 = Animal("Animal",1)
 a1.Intro()
 a1.Speak()
 
-h1 = Human("Anush",19)
+h1 = Human("Anush",19,"Mongolian")
 h1.Intro()
 h1.Speak()
+print(h1.race)
 
 d1 = Dog("Numi",1)
 d1.Intro()
